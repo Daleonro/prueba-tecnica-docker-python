@@ -1,0 +1,10 @@
+version: "9000"
+services:
+  prueba-tecnica-message:
+    image: prueba-tecnica-docker/devops/test:1.0.0
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    volumes:
+      - ./codigo:/usr/src/app
